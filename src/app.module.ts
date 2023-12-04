@@ -10,6 +10,10 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 import { UnidadesModule } from './unidades/unidades.module';
 
+import {Repostaje} from './repostaje/entities/repostaje.entity';
+import {Unidade} from './unidades/entities/unidade.entity';
+
+
 
 
 
@@ -31,7 +35,7 @@ import { UnidadesModule } from './unidades/unidades.module';
       "username": "root",
       "password": "",
       "database": "git",
-      "entities": [join(__dirname, '**','*.entity.{ts,js}')],
+      "entities": [Repostaje, Unidade],
       "synchronize": true
     }),
     UnidadesModule],
