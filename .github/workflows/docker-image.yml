@@ -1,5 +1,6 @@
 name: Docker Image CI
 
+
 on:
   push:
     branches: [ "main" ]
@@ -47,5 +48,5 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |     
-        docker push AndresYudeh/docker-graphql:$NEW_VERSION
-        docker push AndresYudeh/docker-graphql:latest
+        docker push AndresYudeh/ws-server:$NEW_VERSION
+        docker push AndresYudeh/ws-server:latest
