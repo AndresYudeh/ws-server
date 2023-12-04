@@ -35,3 +35,4 @@ ARG APP_VERSION
 ENV APP_VERSION=${APP_VERSION}
 
 CMD ["node", "dist/main.js"]
+
