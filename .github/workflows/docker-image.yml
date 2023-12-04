@@ -38,15 +38,15 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker build -t andresyudeh/ws-server:$NEW_VERSION .
-        docker build -t andresyudeh/ws-server:latest .
+        docker build -t grupointegracion/ws-server:$NEW_VERSION .
+        docker build -t grupointegracion/ws-server:latest .
         
     - name: Push Docker Image
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |
-        docker push andresyudeh/ws-server:$NEW_VERSION
-        docker push andresyudeh/ws-server:latest
+        docker push grupointegracion/ws-server:$NEW_VERSION
+        docker push grupointegracion/ws-server:latest
       
     
     
