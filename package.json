@@ -2,7 +2,7 @@
   "name": "ws-server",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "B. Andres Yudeh Cedeño <e1315259398@live.uleam.edu.ec>",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -75,5 +75,7 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/AndresYudeh/ws-server.git"
 }

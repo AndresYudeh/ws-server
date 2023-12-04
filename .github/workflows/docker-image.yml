@@ -40,12 +40,12 @@ jobs:
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}  
       run: |
-        docker build -t AndresYudeh/ws-server:$NEW_VERSION .
-        docker build -t AndresYudeh/ws-server:latest .
+        docker build -t AndresYudeh/docker-graphql:$NEW_VERSION .
+        docker build -t AndresYudeh/docker-graphql:latest .
 
     - name: Push Docker Image
       env:
         NEW_VERSION: ${{ steps.version.outputs.version }}
       run: |     
-        docker push AndresYudeh/ws-server:$NEW_VERSION
-        docker push AndresYudeh/ws-server:latest
+        docker push AndresYudeh/docker-graphql:$NEW_VERSION
+        docker push AndresYudeh/docker-graphql:latest
